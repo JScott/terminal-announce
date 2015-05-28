@@ -11,8 +11,9 @@ context 'the Announce module' do
         end
         $stdout.string
       end
-      asserts('doing something') { not topic.empty? }
-      asserts('printing the message') { topic =~ /hello world/ }
+      denies_topic('the output').empty
+      asserts_topic('the output').matches /hello world/
+      asserts('coloring the output') { topic =~ /\\e\[/ }
     end
   end
 end
