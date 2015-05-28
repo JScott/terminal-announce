@@ -12,6 +12,7 @@ context 'the Announce module' do
         end
       end
       asserts('doing something') { not topic.empty? }
+      asserts('coloring the output') { topic =~ /\\e\[/ }
     end
   end
 end
