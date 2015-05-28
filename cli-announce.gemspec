@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name        = 'cli-announce'
-  gem.version     = '0.0.1'
+  gem.version     = '1.0.0'
   gem.licenses    = 'MIT'
   gem.authors     = ['Justin Scott']
   gem.email       = 'jvscott@gmail.com'
