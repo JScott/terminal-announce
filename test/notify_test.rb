@@ -12,7 +12,7 @@ context 'the Announce module' do
         $stdout.string
       end
       asserts('doing something') { not topic.empty? }
-      asserts('printing the message') { p topic; topic =~ /hello world/ }
+      asserts('printing the message') { topic =~ /hello world/ }
     end
   end
 end
