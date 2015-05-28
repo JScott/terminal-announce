@@ -1,10 +1,10 @@
 Gem::Specification.new do |gem|
-  gem.name        = 'cli-notify'
+  gem.name        = 'cli-announce'
   gem.version     = '0.0.1'
   gem.licenses    = 'MIT'
   gem.authors     = ['Justin Scott']
   gem.email       = 'jvscott@gmail.com'
-  gem.homepage    = 'http://www.github.com/jscott/cli-notify/'
+  gem.homepage    = 'http://www.github.com/jscott/cli-announce/'
   gem.summary     = 'Terminal notifications in a functional way'
   gem.description = gem.summary
 
