@@ -1,0 +1,33 @@
+PATH
+  remote: .
+  specs:
+    cli-notify (0.0.1)
+      bundler
+      contracts
+      rainbow
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    contracts (0.9)
+    docile (1.1.5)
+    json (1.8.2)
+    rainbow (2.0.0)
+    rake (10.4.2)
+    riot (0.12.7)
+      rr
+    rr (1.1.2)
+    simplecov (0.10.0)
+      docile (~> 1.1.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cli-notify!
+  rake
+  riot
+  simplecov
