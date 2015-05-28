@@ -10,7 +10,7 @@ module Announce
     }[type]
   end
 
-  def self.create_prefix_for(type)
+  def self.prefix_for(type)
     color = color_for type
     text = type.to_s.capitalize
     "[#{Rainbow(text).color(color)}]"
