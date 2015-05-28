@@ -8,27 +8,11 @@ context 'the Announce module' do
         begin
           Announce.send method.to_sym, 'hello world'
         rescue NoMethodError
-          $stdout.string || ''
         end
+        $stdout.string
       end
       asserts('doing something') { not topic.empty? }
-      asserts('coloring the output') { topic =~ /\\e\[/ }
+      asserts('printing the message') { p topic; topic =~ /hello world/ }
     end
   end
 end
-
-# notify
-# aliases
-# custom attributes
-# custom colours
-
-# def self.notify(type = :success, string)
-#     colors = {
-#       success: :green,
-#       failure: :red,
-#       warning: :yellow,
-#       info: :light_blue
-#     }
-#     color = colors[type] || ''
-#     puts "[#{type.to_s.capitalize.colorize(color)}] #{string}"
-#   end
