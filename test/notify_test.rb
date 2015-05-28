@@ -6,7 +6,7 @@ context 'the Announce module' do
     context "calling #{method}" do
       setup do
         begin
-          Announce.send method.to_sym
+          Announce.send method.to_sym, 'hello world'
         rescue NoMethodError
           $stdout.string || ''
         end
