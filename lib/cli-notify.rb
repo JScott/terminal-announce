@@ -33,6 +33,6 @@ module Announce
   end
 
   def self.log(type, message)
-    puts "#{create_prefix_for :success} #{message}"#"#{create_prefix_for type} #{message}"
+    puts "#{prefix_for type} #{message}"
   end
 end
