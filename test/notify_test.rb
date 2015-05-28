@@ -5,8 +5,11 @@ context 'the Announce module' do
   %w(success failure warning info).each do |method|
     context "calling #{method}" do
       setup do
-        # Announce.send method.to_sym
-        $stdout.string || ''
+        begin
+          Announce.send method.to_sym
+        rescue NoMethodError
+          $stdout.string || ''
+        end
       end
       asserts('doing something') { not topic.empty? }
     end
