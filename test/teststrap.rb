@@ -1,3 +1,3 @@
 require 'rubygems'
-require 'cli-announce'
+require 'terminal-announce'
 require 'riot'

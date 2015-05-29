@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cli-announce (0.0.1)
+    terminal-announce (1.0.0)
       bundler
       contracts
       rainbow
@@ -27,7 +27,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cli-announce!
   rake
   riot
   simplecov
+  terminal-announce!
